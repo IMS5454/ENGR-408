@@ -3,16 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AR Arrow with AR.js</title>
+    <title>ENGR 408 Arrows</title>
     <script src="https://aframe.io/releases/1.2.0/aframe.min.js"></script>
     <script src="https://cdn.rawgit.com/jeromeetienne/ar.js/1.7.2/aframe/build/aframe-ar.min.js"></script>
 </head>
 <body style="margin: 0; overflow: hidden;">
-    <!-- A-Frame Scene -->
     <a-scene arjs>
-        <!-- Marker -->
         <a-marker type="pattern" url="pattern-Place 1 Left/custom.patt">
-            <!-- Arrow Model -->
             <a-entity 
                 geometry="primitive: cone; radiusBottom: 0.1; height: 0.5" 
                 material="color: red; opacity: 0.9" 
@@ -20,8 +17,6 @@
                 rotation="-90 0 0">
             </a-entity>
         </a-marker>
-        
-        <!-- Camera -->
         <a-entity camera></a-entity>
     </a-scene>
 </body>
